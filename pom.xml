@@ -18,12 +18,12 @@
     <dependency>
       <groupId>org.jruby</groupId>
       <artifactId>jruby-complete</artifactId>
-      <version>9.2.7.0</version>
+      <version>9.2.9.0</version>
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-webmvc</artifactId>
-      <version>5.2.0.RELEASE</version>
+      <version>5.2.3.RELEASE</version>
     </dependency>
     <dependency>
       <groupId>javax.servlet</groupId>
@@ -45,26 +45,26 @@
         </configuration>
       </plugin>
       <plugin>
-	    <groupId>de.saumya.mojo</groupId>
-	    <artifactId>jruby-maven-plugin</artifactId>
-	    <version>1.1.7</version>
-	    <configuration>
-	      <generateJava>true</generateJava>
-	      <generatedJavaDirectory>target/generated-sources/jruby</generatedJavaDirectory>
-	    </configuration>
-	    <executions>
-	      <execution>
-	        <phase>process-resources</phase>
-	        <goals>
+        <groupId>de.saumya.mojo</groupId>
+        <artifactId>jruby-maven-plugin</artifactId>
+        <version>1.1.7</version>
+        <configuration>
+          <generateJava>true</generateJava>
+          <generatedJavaDirectory>target/generated-sources/jruby</generatedJavaDirectory>
+        </configuration>
+        <executions>
+          <execution>
+            <phase>process-resources</phase>
+            <goals>
               <goal>compile</goal>
-	        </goals>
-	      </execution>
-	    </executions>
+            </goals>
+          </execution>
+        </executions>
       </plugin>
       <plugin>
         <groupId>org.eclipse.jetty</groupId>
         <artifactId>jetty-maven-plugin</artifactId>
-        <version>9.4.19.v20190610</version>
+        <version>9.4.26.v20200117</version>
       </plugin>
     </plugins>
   </build>
