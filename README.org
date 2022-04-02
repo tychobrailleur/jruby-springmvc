@@ -1,0 +1,21 @@
+Spring MVC with Ruby
+
+Compile:
+
+#+BEGIN_EXAMPLE
+  $ mvn package
+#+END_EXAMPLE
+
+Run:
+
+#+BEGIN_EXAMPLE
+  $ mvn jetty:run
+#+END_EXAMPLE
+
+The app can then be accessed there: http://localhost:8080/myapp/welcome
+
+* License
+
+Copyright (c) 2013–2022  Sébastien Le Callonnec
+
+This project is licensed under the GNU General Public License v3.0.
